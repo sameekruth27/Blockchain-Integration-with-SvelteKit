@@ -1,0 +1,10 @@
+{
+	"/": [],
+	"/cloud-wallet": [
+		"src/routes/cloud-wallet/+page.server.js"
+	],
+	"/profiles": [
+		"src/routes/profiles/+page.server.ts"
+	],
+	"/raw-wallet": []
+}

@@ -3,7 +3,7 @@
     export let form;
 </script>
 
-<div class="flex flex-wrap justify-center mt-5 space-x-14">
+<div class="flex flex-wrap justify-center mt-3 space-x-14">
     <div class="w-full md:w-2/5 max-w-lg p-4 rounded-lg shadow-xl dark:bg-white/10 bg-white/30 ring-1 ring-gray-900/5 backdrop-blur-lg">
         <h2 class="text-center text-2xl font-bold mb-4">LOGIN</h2>
         <form method="POST" action="?/login">

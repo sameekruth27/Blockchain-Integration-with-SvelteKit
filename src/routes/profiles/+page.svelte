@@ -46,22 +46,15 @@
           name="email"
         />
       </div>
-      <!-- <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
-            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-state">
-              Email
-            </label>
-          </div> -->
       <button
         type="submit"
-        class="bg-blue-500 hover:bg-blue-700 text-white font-bold mt-5 ml-2 px-2 rounded "
+        class="bg-blue-500 hover:bg-blue-700 text-white font-bold mt-5 ml-2 px-2 rounded"
       >
         Create Applicant
       </button>
     </div>
   </form>
   {#if form?.success}
-    <!-- this message is ephemeral; it exists because the page was rendered in
-		   response to a form submission. it will vanish if the user reloads -->
     <p class="pt-2">Added new Applicant!</p>
   {/if}
 </div>

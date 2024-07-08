@@ -10,7 +10,8 @@ const signer = new NeucronSigner(provider);
 
 await signer.login("sales@timechainlabs.io", "string");
 await Root.loadArtifact();
-let instance
+await Root.loadArtifact(artifact);
+let instance: any;
 
 /** @type {import('./$types').Actions} */
 export const actions = {
@@ -18,7 +19,7 @@ export const actions = {
 
     const data = await request.formData();
     
-    const square = BigInt(data.get("square"));
+    const square = BigInt(Number(data.get("square")));
     instance = new Root(square);
 
     await instance.connect(signer);
@@ -36,7 +37,7 @@ export const actions = {
 
     const data = await request.formData()
     
-    const root = BigInt(data.get('root'))
+    const root = Number(data.get('root'))
 
     const {tx:callTx} = await instance.methods.unlock(root)
 

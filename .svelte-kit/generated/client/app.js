@@ -6,16 +6,18 @@ export const nodes = [
 	() => import('./nodes/2'),
 	() => import('./nodes/3'),
 	() => import('./nodes/4'),
-	() => import('./nodes/5')
+	() => import('./nodes/5'),
+	() => import('./nodes/6')
 ];
 
 export const server_loads = [];
 
 export const dictionary = {
 		"/": [2],
-		"/cloud-wallet": [~3],
-		"/profiles": [~4],
-		"/raw-wallet": [5]
+		"/bounty": [~3],
+		"/cloud-wallet": [~4],
+		"/profiles": [~5],
+		"/raw-wallet": [6]
 	};
 
 export const hooks = {

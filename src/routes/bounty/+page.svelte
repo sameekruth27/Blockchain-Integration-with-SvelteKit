@@ -41,8 +41,8 @@
           </div>
         </div>
       </form>
-      {#if form?.success}
-        <p class="pt-2 text-center text-green-500">Bounty was deployed successfully: <a href={"https://whatsonchain.com/tx/" + form?.tx} class="text-blue-500 underline" target="_blank" rel="noopener noreferrer">Transaction Link!</a></p>
+      {#if form?.deployed}
+        <p class="pt-2 text-center text-green-500">Bounty was deployed successfully: <a href={"https://whatsonchain.com/tx/" + form?.txid} class="text-blue-500 underline" target="_blank" rel="noopener noreferrer">Transaction Link!</a></p>
       {/if}
     </div>
   </div>
@@ -74,7 +74,7 @@
         </div>
       </form>
       {#if form?.success}
-        <p class="pt-2 text-center text-green-500">Bounty was unlocked successfully: <a href={"https://whatsonchain.com/tx/" + form?.tx} class="text-blue-500 underline" target="_blank" rel="noopener noreferrer">Transaction Link!</a></p>
+        <p class="pt-2 text-center text-green-500">Bounty was unlocked successfully: <a href={"https://whatsonchain.com/tx/" + form?.txid} class="text-blue-500 underline" target="_blank" rel="noopener noreferrer">Transaction Link!</a></p>
       {/if}
     </div>
   </div>
